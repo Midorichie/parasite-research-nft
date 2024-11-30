@@ -1,18 +1,15 @@
 [project]
-name = "parasitr-research-nft"
+name = "parasite-research-nft"
 description = "NFT Marketplace for Parasitology Research"
 authors = ["Your Name <your.email@example.com>"]
 telemetry = true
 cache_dir = "./.clarinet"
 
-[contracts.parasitr-nft]
-path = "contracts/parasitr-nft.clar"
-
-[contracts.marketplace]
-path = "contracts/marketplace.clar"
-
-[contracts.research-access]
-path = "contracts/research-access.clar"
+[contracts]
+parasite-nft = { path = "contracts/parasite-nft.clar" }
+marketplace = { path = "contracts/marketplace.clar" }
+research-access = { path = "contracts/research-access.clar" }
+nft-trait = { path = "contracts/nft-trait.clar" }
 
 [repl.analysis]
 passes = ["check_checker"]
